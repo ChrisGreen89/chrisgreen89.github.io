@@ -3,6 +3,7 @@ import emergence from 'emergence.js'
 
 import Navi from 'components/Navi'
 import Footer from 'components/Footer'
+import Shapes from 'components/Shapes'
 import { siteMetadata } from '../../../gatsby-config'
 
 import 'modern-normalize/modern-normalize.css'
@@ -25,6 +26,7 @@ class Layout extends React.Component {
     return (
       <div>
         <Navi title={siteMetadata.title} {...this.props} />
+        <Shapes />
         {children}
         <Footer title={siteMetadata.title} author={siteMetadata.author} />
       </div>

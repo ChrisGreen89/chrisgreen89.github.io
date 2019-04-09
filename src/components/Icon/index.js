@@ -14,6 +14,7 @@ import {
   faReact,
   faTwitter,
   faVuejs,
+  faAzure,
 } from '@fortawesome/free-brands-svg-icons'
 import './style.scss'
 
@@ -31,8 +32,8 @@ library.add(
   faVuejs
 )
 
-const Icon = ({ name }) => (
-  <div className="icon" title={name}>
+const Icon = ({ name, title }) => (
+  <div className="icon" title={title}>
     <FontAwesomeIcon icon={['fab', name]} />
   </div>
 )

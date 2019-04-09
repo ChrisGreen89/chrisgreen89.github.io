@@ -1,0 +1,23 @@
+@import 'scss/colors.scss';
+
+.hero {
+  width: 100%;
+  margin: 0px;
+  min-height: 400px;
+  background-color: $chrisgreen;
+  color: $white;
+  align-items: center;
+  display: flex;
+  padding-bottom: 0px;
+  background-image: url('/img/hero-pattern.png');
+  background-size: cover;
+}
+
+.hero-img {
+  margin-bottom: 0px;
+}
+
+.hero-img:hover {
+  animation: none;
+  -webkit-animation: none;
+}

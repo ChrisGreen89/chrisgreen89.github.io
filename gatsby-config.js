@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatstrap',
+    title: 'chrisgreen.dev',
     description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
+    siteUrl: 'https://chrisgreen.dev',
+    author: 'chrisgreen',
+    twitter: 'its_chris_green',
     adsense: '',
   },
   pathPrefix: '/',
@@ -23,6 +23,13 @@ module.exports = {
         name: 'images',
       },
     },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     path: `${__dirname}/content/fonts/`,
+    //     name: 'fonts',
+    //   },
+    // },
     {
       resolve: 'gatsby-transformer-remark',
       options: {

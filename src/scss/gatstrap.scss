@@ -10,7 +10,7 @@
 
 // Reassign color vars to semantic color scheme
 $theme-colors: (
-  primary: $purple,
+  primary: $chrisgreen,
   secondary: $gray-600,
   success: $green,
   info: $cyan,
@@ -60,7 +60,7 @@ $link-hover-decoration: none !default;
 // Fonts
 //
 @import './fonts.scss';
-
+@import './azure.scss';
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 html,
@@ -87,4 +87,13 @@ img {
 
 img:hover {
   animation: pulse 0.5s;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+section {
+  z-index: 10;
 }

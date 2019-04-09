@@ -10,7 +10,7 @@ const Footer = ({ author, title }) => (
         {title}
         <Link to="/profile/">
           <br />
-          <strong>{author}</strong> on Profile
+          <strong>{author}</strong>
         </Link>
       </p>
     </div>
