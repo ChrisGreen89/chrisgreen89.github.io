@@ -15,6 +15,7 @@ $secondary-color: #764ba2;
   top: 0;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .random-shape:after {
@@ -30,19 +31,27 @@ $shape-count: 25;
 @for $i from 1 through $shape-count {
   $shape-size: random(10);
   $rotation: random(360);
-  $speed: 400 + random(10);
+  $speed: 10 + random(10);
   $color-key: random(length($colors));
   $shape-color: nth($colors, $color-key);
   $shape-key: random(length($shapes));
   $shape-type: nth($shapes, $shape-key);
+  $shape-top: random(100);
+  $shape-x: random(100);
   $text: random(10);
 
   @keyframes shape-#{$i} {
     0% {
-      transform: translate3d(0, 0, 0) rotate(#{$rotation + 0}deg);
+      //transform: translate3d(0, 0, 0) rotate(#{$rotation + 0}deg);
+      transform: matrix(1, 0, 0, 1, 0, -120);
+    }
+    50% {
+      //transform: translate3d(0, 0, 0) rotate(#{$rotation + 360}deg);
+      transform: matrix(1, 0, 0, 1, 0, -100);
     }
     100% {
-      transform: translate3d(0, 0, 0) rotate(#{$rotation + 360}deg);
+      //transform: translate3d(0, 0, 0) rotate(#{$rotation + 0}deg);
+      transform: matrix(1, 0, 0, 1, 0, -120);
     }
   }
 
@@ -54,6 +63,9 @@ $shape-count: 25;
       color: $shape-color;
       font-size: #{$shape-size * 0.2}rem;
       content: $shape-type;
+      top: #{$shape-top}vh;
+      left: #{$shape-x}vw;
+      position: absolute;
     }
   }
 }

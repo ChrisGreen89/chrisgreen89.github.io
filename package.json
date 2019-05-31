@@ -78,6 +78,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
+    "netlify": "gatsby build",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.+(js|json|md)\"",

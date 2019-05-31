@@ -7,6 +7,8 @@ import Post from 'templates/Post'
 import Meta from 'components/Meta'
 import Layout from 'components/Layout'
 import Hero from 'components/Hero'
+import PriceTable from 'components/PriceTable'
+import Contact from 'components/Contact'
 
 import Icon from 'components/Icon'
 
@@ -42,7 +44,7 @@ const BlogIndex = ({ data, location }) => {
       ))} */}
       <section className="text-center">
         <div className="container">
-          <div className="row">
+          <div className="row vcenter">
             <div className="col-md-6" style={{ 'text-align': 'left' }}>
               <h1>hi.</h1>
               <p>
@@ -54,7 +56,7 @@ const BlogIndex = ({ data, location }) => {
               <p>
                 Since then, I've fallen in love with modern web design,
                 including HTML5, CSS3, Node.js and a bunch of other
-                technologies. And I'd love to design your website for you.
+                technologies. And I'd love to build your website for you.
               </p>
             </div>
             <div className="col-md-6">
@@ -114,6 +116,8 @@ const BlogIndex = ({ data, location }) => {
           </div>
         </div>
       </section>
+      <PriceTable />
+      <Contact />
 
       {/* <section id="features" className="text-center jumboimage">
         <Img sizes={back1} className="cover-image" />
@@ -160,7 +164,7 @@ const BlogIndex = ({ data, location }) => {
         </div>
       </section> */}
 
-      <section id="repos">
+      {/* <section id="repos">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-12 text-left">
@@ -171,7 +175,7 @@ const BlogIndex = ({ data, location }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }
