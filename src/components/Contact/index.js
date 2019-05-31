@@ -3,10 +3,19 @@ import React, { Component } from 'react'
 class Contact extends Component {
   render() {
     return (
-      <div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
+      <section className="bg-primary text-white">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-5">
+              <h1>Contact</h1>
+              <p>
+                <em>
+                  If you're ready to get moving on a new website or modernizing
+                  a new one, get in touch!
+                </em>
+              </p>
+            </div>
+            <div className="col-md-7">
               <form
                 id="contact-form"
                 name="contact"
@@ -77,7 +86,6 @@ class Contact extends Component {
                           required="required"
                           data-error="Please specify your need."
                         >
-                          <option value="" />
                           <option value="New Website">
                             New Website (from scratch!)
                           </option>
@@ -109,24 +117,9 @@ class Contact extends Component {
                     <div className="col-md-12">
                       <input
                         type="submit"
-                        className="btn btn-success btn-send"
+                        className="btn btn-info btn-send btn-block btn-lg"
                         value="Send message"
                       />
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-12">
-                      <p className="text-muted">
-                        <strong>*</strong> These fields are required. Contact
-                        form template by
-                        <a
-                          href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form"
-                          target="_blank"
-                        >
-                          Bootstrapious
-                        </a>
-                        .
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -135,7 +128,7 @@ class Contact extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     )
   }
 }
