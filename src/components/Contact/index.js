@@ -12,7 +12,6 @@ class Contact extends Component {
                 name="contact"
                 method="post"
                 data-netlify="true"
-                data-netlify-honeypot="bot-field"
                 role="form"
               >
                 <div className="messages" />
@@ -134,6 +133,7 @@ class Contact extends Component {
                     </div>
                   </div>
                 </div>
+                <input type="hidden" name="form-name" value="contact" />
               </form>
             </div>
           </div>
