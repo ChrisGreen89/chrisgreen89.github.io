@@ -6,16 +6,16 @@ class Contact extends Component {
       <section className="bg-primary text-white">
         <div className="container">
           <div className="row">
-            <div className="col-md-5">
+            <div className="col-md-4">
               <h1>Contact</h1>
               <p>
                 <em>
                   If you're ready to get moving on a new website or modernizing
-                  a new one, get in touch!
+                  a current one, get in touch!
                 </em>
               </p>
             </div>
-            <div className="col-md-7">
+            <div className="col-md-6 offset-md-2">
               <form
                 id="contact-form"
                 name="contact"
@@ -29,56 +29,35 @@ class Contact extends Component {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="form-group">
-                        <label for="form_name">Firstname *</label>
                         <input
                           id="form_name"
                           type="text"
                           name="name"
                           className="form-control"
-                          placeholder="Please enter your firstname *"
+                          placeholder="Name*"
                           required="required"
-                          data-error="Firstname is required."
+                          data-error="Name is required."
                         />
                         <div className="help-block with-errors" />
                       </div>
                     </div>
+
                     <div className="col-md-6">
                       <div className="form-group">
-                        <label for="form_lastname">Lastname *</label>
-                        <input
-                          id="form_lastname"
-                          type="text"
-                          name="surname"
-                          className="form-control"
-                          placeholder="Please enter your lastname *"
-                          required="required"
-                          data-error="Lastname is required."
-                        />
-                        <div className="help-block with-errors" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <label for="form_email">Email *</label>
                         <input
                           id="form_email"
                           type="email"
                           name="email"
                           className="form-control"
-                          placeholder="Please enter your email *"
+                          placeholder="Email*"
                           required="required"
                           data-error="Valid email is required."
                         />
                         <div className="help-block with-errors" />
                       </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-12">
                       <div className="form-group">
-                        <label for="form_need">
-                          Please specify your need *
-                        </label>
                         <select
                           id="form_need"
                           name="need"
@@ -101,7 +80,6 @@ class Contact extends Component {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="form-group">
-                        <label for="form_message">Message *</label>
                         <textarea
                           id="form_message"
                           name="message"
