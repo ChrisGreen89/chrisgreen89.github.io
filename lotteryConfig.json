@@ -1,1 +1,32 @@
-{}
+{
+  "displayJackpotTotal": false,
+  "displayJackpotPayout": true,
+  "displayTicketsSoldProgressBar": false,
+  "displayTicketsRemaining": false,
+  "displayMilestoneCountdownBanner": true,
+  "requireEmailConfirmation": true,
+  "forms": {
+    "phone": {
+      "restrictPhoneNumberLength": true,
+      "restrictPhoneNumberLengthDigits": 11
+    }
+  },
+  "googleTag": "GTM-#######",
+  "lotteryMainWebsite": "https://stridemgmt.com",
+  "emailReceiptSubjectText": "Thank you for your purchase",
+  "footerLinks": [
+    {
+      "text": "Home",
+      "url": "https://stridemgmt.com"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://stridemgmt.com/privacy-policy"
+    }
+  ],
+  "website": {
+    "title": "SMC Checkout 2.0",
+    "metaDescription": "A lottery checkout system for Stride Management Corporation"
+  },
+  "smcOverrideAllowed": true
+}
