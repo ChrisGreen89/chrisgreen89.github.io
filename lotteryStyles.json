@@ -1,0 +1,6 @@
+{
+  "dark": "#333333",
+  "light": "#ffffff",
+  "lotteryPrimary": "#0084b6",
+  "lotteryLinkHoverColour": "$light"
+}
